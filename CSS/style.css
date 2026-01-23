@@ -1291,13 +1291,13 @@ h3{
     margin-top: var(--space-md);
     margin-bottom: var(--space-lg);
     width: 100%;
+    overflow: hidden;
 } 
 .news h4{
     font-size: 0.875rem;
     display: block;
     min-width: 0;
-    white-space: nowrap; 
-    overflow: hidden;      
+    white-space: nowrap;      
     text-overflow: ellipsis;
     width: 100%; 
     box-sizing: border-box;
