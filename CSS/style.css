@@ -1229,21 +1229,21 @@ nav.open{
     grid-template-columns: repeat(2, 1fr);
 }
 .plan-subtitle{
-    font-size: 0.8rem;
+    font-size: clamp(0.75rem, 3.5vw, 0.875rem)
 }
 
 .price{
     color: #000;
-    font-size: 0.875rem;
+    font-size: clamp(0.75rem, 3.5vw, 0.875rem)
     font-family: 'Zen Old Mincho', serif;
     padding-left: 10px;  
     text-align: left;
 }
 .price-text{
-    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 3.5vw, 0.875rem)
 }
 .outside-plan{
-    font-size:0.875rem;
+    font-size: clamp(0.75rem, 3.5vw, 0.875rem)
     margin-bottom: var(--space-lg);
 }
 .img-wrapper {
