@@ -1230,6 +1230,7 @@ nav.open{
 }
 .plan-subtitle{
     font-size: clamp(0.75rem, 3.5vw, 0.875rem);
+    word-break: break-word;
 }
 
 .price{
@@ -1251,9 +1252,6 @@ nav.open{
   width: 100%;
   height: auto;
   display: block;
-}
-.img-wrapper{
-    aspect-ratio: 1 / 1;
 }
 
 .item{
