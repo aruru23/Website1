@@ -1292,8 +1292,7 @@ h3{
     margin-left: auto;
 } 
 .news h4{
-    font-size: 0.875rem;
-    white-space: nowrap;
+    font-size: 0.75rem;
 }
 .Gallery{
     padding: var(--space-lg) 0;
