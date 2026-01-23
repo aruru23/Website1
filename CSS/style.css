@@ -1299,6 +1299,8 @@ h3{
     white-space: nowrap; 
     overflow: hidden;      
     text-overflow: ellipsis;
+    width: 100%; 
+    box-sizing: border-box;
 }
 .Gallery{
     padding: var(--space-lg) 0;
