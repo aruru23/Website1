@@ -1235,7 +1235,6 @@ nav.open{
 .price{
     color: #000;
     font-size: 0.875rem;
-    font-weight: bold;
     font-family: 'Zen Old Mincho', serif;
     padding-left: 10px;  
     text-align: left;
@@ -1250,11 +1249,14 @@ nav.open{
 .item{
     display: flex;
     flex-direction: column;
+    width:100%;
 }
 .plan-subtitle {      
     font-size: 0.875rem;
     margin-top: 10px;
-    margin-bottom: 0;   
+    margin-bottom: 0;
+    max-width: 100%;
+    
 }
 
 }
