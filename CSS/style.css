@@ -1295,7 +1295,7 @@ h3{
     text-overflow: ellipsis;
 } 
 .news h4{
-    font-size: 0.75rem;
+    font-size: 0.875rem;
 }
 .Gallery{
     padding: var(--space-lg) 0;
