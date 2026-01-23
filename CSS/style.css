@@ -1150,7 +1150,7 @@ input[type="submit"]{
     list-style-position: inside;
 }
 
-@media (max-width: 995px) {
+@media (max-width: 1100px) {
 .hamburger{
     display: block;
     font-size: 2rem;
@@ -1203,7 +1203,71 @@ nav.open{
     z-index: 900;
     background: #f5f2ec;
 }
+/*overlay解除-----------*/
+/*plan
+---------------------------*/
+#plan .bg{
+    height: 300px;
+}
 
+.plan-title h2{
+    font-size: 2rem;
+    margin-top: var(--space-lg);  
+}
+.plan-title .small{
+    font-size:1rem;
+}
+.plan-name1{
+    font-size: 1.1rem;    
+}
+.plan-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.plan-subtitle{
+    font-size: 0.8rem;
+}
+.price-overlay{
+    position: static;    /* absolute解除 */
+    background: none;    /* 黒背景を消す */
+    opacity: 1;          /* 常に表示 */
+    display: block;      /* flex解除 */
+    padding: 0;
+    order: 3;            /* タイトルの下に配置 */
+}
+.price{
+    color: #432;         /* PC版の枠線や文字色に近い濃い茶色 */
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    margin-top: 4px;     /* タイトルとの隙間 */
+    padding-left: 10px;  /* 「│」のラインに揃えるための余白 */
+    text-align: left;
+}
+.price-text{
+    font-size: 0.75rem;
+}
+.outside-plan{
+    font-size:0.875rem;
+    margin-bottom: var(--space-lg);
+}
+    /* 3. 画像とタイトルの順番整理 */
+.img-wrapper {
+    order: 1;
+    aspect-ratio: 1 / 1;
+}
+.plan-subtitle {
+    order: 2;            /* 画像のすぐ下に配置 */
+    font-size: 0.8rem;
+    margin-top: 10px;
+    margin-bottom: 0;    /* 金額との間を詰めすぎないよう適宜調整 */
+}
+
+/* 4. スマホ・タブレットでホバーが効かないように念のため上書き */
+.img-wrapper:hover .price-overlay {
+    opacity: 1;
+    background: none;
+}
 }
 
 @media (max-width: 767px) {
@@ -1480,39 +1544,7 @@ h3{
 .news-button1{
     margin-bottom: var(--space-md);
 }
-/*plan
----------------------------*/
-#plan .bg{
-    height: 300px;
-}
 
-.plan-title h2{
-    font-size: 2rem;
-    margin-top: var(--space-lg);  
-}
-.plan-title .small{
-    font-size:1rem;
-}
-.plan-name1{
-    font-size: 1.1rem;    
-}
-.plan-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.plan-subtitle{
-    font-size: 0.8rem;
-}
-.price{
-    font-size: 1rem;
-}
-.price-text{
-    font-size: 0.75rem;
-}
-.outside-plan{
-    font-size:0.875rem;
-    margin-bottom: var(--space-lg);
-}
 /*contact
 ---------------------------*/
 #contact .bg{
