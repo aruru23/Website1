@@ -1293,6 +1293,7 @@ h3{
 } 
 .news h4{
     font-size: 0.875rem;
+    white-space: nowrap;
 }
 .Gallery{
     padding: var(--space-lg) 0;
