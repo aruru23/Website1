@@ -1246,10 +1246,19 @@ nav.open{
     font-size:0.875rem;
     margin-bottom: var(--space-lg);
 }
+.img-wrapper {
+  width: 100%;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .item{
     display: flex;
     flex-direction: column;
-    width:100%;
 }
 .plan-subtitle {      
     font-size: 0.875rem;
