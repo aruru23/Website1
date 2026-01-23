@@ -1204,8 +1204,7 @@ nav.open{
     background: #f5f2ec;
 }
 /*overlay解除-----------*/
-/*plan
----------------------------*/
+/*plan---------------------------*/
 #plan .bg{
     height: 300px;
 }
@@ -1228,15 +1227,15 @@ nav.open{
     font-size: 0.8rem;
 }
 .price-overlay{
-    position: static;    /* absolute解除 */
-    background: none;    /* 黒背景を消す */
-    opacity: 1;          /* 常に表示 */
-    display: block;      /* flex解除 */
+    order: 3;
+    position: static;  
+    background: none;   
+    opacity: 1;         
+    display: block;   
     padding: 0;
-    order: 3;            /* タイトルの下に配置 */
 }
 .price{
-    color: #432;         /* PC版の枠線や文字色に近い濃い茶色 */
+    color: #000;
     font-size: 1rem;
     font-weight: bold;
     font-family: 'Cinzel', serif;
@@ -1251,23 +1250,24 @@ nav.open{
     font-size:0.875rem;
     margin-bottom: var(--space-lg);
 }
-    /* 3. 画像とタイトルの順番整理 */
+.item{
+    display: flex;
+    flex-direction: column;
+}
 .img-wrapper {
     order: 1;
     aspect-ratio: 1 / 1;
 }
 .plan-subtitle {
-    order: 2;            /* 画像のすぐ下に配置 */
+    order: 2;         
     font-size: 0.8rem;
     margin-top: 10px;
-    margin-bottom: 0;    /* 金額との間を詰めすぎないよう適宜調整 */
+    margin-bottom: 0;   
 }
-
-/* 4. スマホ・タブレットでホバーが効かないように念のため上書き */
 .img-wrapper:hover .price-overlay {
     opacity: 1;
-    background: none;
 }
+
 }
 
 @media (max-width: 767px) {
