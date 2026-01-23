@@ -1246,9 +1246,6 @@ nav.open{
     font-size: clamp(0.75rem, 3.5vw, 0.875rem)
     margin-bottom: var(--space-lg);
 }
-.img-wrapper {
-  width: 100%;
-}
 
 .img-wrapper img {
   width: 100%;
@@ -1264,7 +1261,6 @@ nav.open{
     font-size: 0.875rem;
     margin-top: 10px;
     margin-bottom: 0;
-    max-width: 100%;
     
 }
 
