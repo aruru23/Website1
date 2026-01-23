@@ -1224,7 +1224,6 @@ nav.open{
     font-size: 1.1rem;    
 }
 .plan-container{
-    margin:0 3.5%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -1250,8 +1249,8 @@ nav.open{
 
 .img-wrapper img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 .item{
