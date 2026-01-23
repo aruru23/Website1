@@ -1289,7 +1289,10 @@ h3{
 {
     margin-top: var(--space-md);
     margin-bottom: var(--space-lg);
-    margin-left: auto;
+    width: 100%;
+    white-space: nowrap; 
+    overflow: hidden;      
+    text-overflow: ellipsis;
 } 
 .news h4{
     font-size: 0.75rem;
