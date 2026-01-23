@@ -1151,6 +1151,13 @@ input[type="submit"]{
 }
 
 @media (max-width: 1100px) {
+.sp-only{
+    display: block;
+    gap: var(--space-xs);
+}
+.pc-only{
+    display: none;
+}
 .hamburger{
     display: block;
     font-size: 2rem;
@@ -1194,9 +1201,7 @@ nav.open{
 
 .main-nav .button{
     margin-left: 0;
-    
 }
-
 .page-header{
     position:sticky;
     top: 0;
@@ -1226,21 +1231,13 @@ nav.open{
 .plan-subtitle{
     font-size: 0.8rem;
 }
-.price-overlay{
-    order: 3;
-    position: static;  
-    background: none;   
-    opacity: 1;         
-    display: block;   
-    padding: 0;
-}
+
 .price{
     color: #000;
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: bold;
-    font-family: 'Cinzel', serif;
-    margin-top: 4px;     /* タイトルとの隙間 */
-    padding-left: 10px;  /* 「│」のラインに揃えるための余白 */
+    font-family: 'Zen Old Mincho', serif;
+    padding-left: 10px;  
     text-align: left;
 }
 .price-text{
@@ -1254,18 +1251,10 @@ nav.open{
     display: flex;
     flex-direction: column;
 }
-.img-wrapper {
-    order: 1;
-    aspect-ratio: 1 / 1;
-}
-.plan-subtitle {
-    order: 2;         
-    font-size: 0.8rem;
+.plan-subtitle {      
+    font-size: 0.875rem;
     margin-top: 10px;
     margin-bottom: 0;   
-}
-.img-wrapper:hover .price-overlay {
-    opacity: 1;
 }
 
 }
@@ -1304,13 +1293,7 @@ h3{
 .logo img{
     width: 160px;
 }
-.sp-only{
-    display: block;
-    gap: var(--space-xs);
-}
-.pc-only{
-    display: none;
-}
+
 
 /*HOME
 -----------------------------*/
